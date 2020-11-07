@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from ccas.models import Cca
+
+admin.site.register(Cca)
