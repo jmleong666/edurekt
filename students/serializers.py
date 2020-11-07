@@ -1,7 +1,8 @@
 from rest_framework import serializers
 
 from modules.models import Module
-from students.models import Student, TakeModule
+from ccas.models import Cca
+from students.models import Student, TakeModule, TakeCca
 
 
 class StudentSerializer(serializers.ModelSerializer):
@@ -16,3 +17,8 @@ class TakeModuleSerializer(serializers.ModelSerializer):
     class Meta:
         model = TakeModule
         fields = ('module', 'student')
+
+class TakeCcaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TakeCca
+        fields = ('cca', 'student')

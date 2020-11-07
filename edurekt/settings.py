@@ -31,13 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'ccas.apps.CcasConfig',
     'lecturers.apps.LecturersConfig',
     'modules.apps.ModulesConfig',
     'rooms.apps.RoomsConfig',
     'students.apps.StudentsConfig',
-    'modules.apps.ModulesConfig',
-    'lecturers.apps.LecturersConfig',
-    'rooms.apps.RoomsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
